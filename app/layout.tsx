@@ -2,10 +2,13 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://jeffreyohlecon.github.io'),
+  metadataBase: new URL('https://jeffreyohl.com'),
   title: 'Jeffrey W. Ohl',
   description:
     'Jeffrey W. Ohl is an Economics PhD student at the University of Chicago Booth School of Business.',
+  alternates: {
+    canonical: '/',
+  },
   icons: {
     icon: '/jeffrey-ohl.jpg',
   },
@@ -14,6 +17,7 @@ export const metadata: Metadata = {
     description:
       'Economics PhD student at the University of Chicago Booth School of Business.',
     type: 'website',
+    url: '/',
     images: [
       {
         url: '/jeffrey-ohl.jpg',
